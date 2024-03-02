@@ -10,7 +10,7 @@
 ## Clone MrFluffyOven twrp tree
     git clone https://github.com/MrFluffyOven/android_device_samsung_gta8.git -b twrp-12.1 device/samsung/gta8
 ## build:
-    export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_gta8wifi-eng; mka recoveryimage
+    export ALLOW_MISSING_DEPENDENCIES=true; . build/envsetup.sh; lunch twrp_gta8-eng; mka recoveryimage
 ## Multidisabler
     Boot twrp, Wipe data, Reboot Recovery, go to twrp terminal, type "multidisabler" hit enter/return , Wipe data again, Encryption should be Disabled
 
