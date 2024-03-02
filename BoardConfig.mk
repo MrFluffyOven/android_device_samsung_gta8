@@ -23,7 +23,7 @@
 # *not* include it on all devices, so it is safe even with hardware-specific
 # components.
 
-DEVICE_PATH := device/samsung/gta8wifi
+DEVICE_PATH := device/samsung/gta8
 
 # For building with minimal manifest
 ALLOW_MISSING_DEPENDENCIES := true
