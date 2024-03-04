@@ -1,10 +1,17 @@
-# Inherit from common AOSP config
-$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
-
 LOCAL_PATH := device/samsung/gta8
 
 PRODUCT_PLATFORM := ums512
 PRODUCT_USE_DYNAMIC_PARTITIONS := true
+
+# Inherit from common AOSP config
+$(call inherit-product, $(SRC_TARGET_DIR)/product/base.mk)
+
+# Enable updating of APEXes
+$(call inherit-product, $(SRC_TARGET_DIR)/product/updatable_apex.mk)
+
+# API levels
+BOARD_API_LEVEL := 30
+PRODUCT_SHIPPING_API_LEVEL := 30
 
 PRODUCT_PACKAGES += \
     otapreopt_script \
